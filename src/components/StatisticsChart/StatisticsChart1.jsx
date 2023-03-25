@@ -1,6 +1,6 @@
 import ReactECharts from 'echarts-for-react'
 import * as echarts from 'echarts'
-const StatisticsChart = () => {
+const StatisticsChart1 = () => {
 
     const option = {
         color: ['var(--orange)'],
@@ -38,8 +38,8 @@ const StatisticsChart = () => {
         ],
         series: [
             {
-                type: "line",
-                smooth: true,
+                type: "bar",
+                smooth: false,
                 lineStyle: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                         {
@@ -81,6 +81,6 @@ const StatisticsChart = () => {
     )
 }
 
-export default StatisticsChart
+export default StatisticsChart1
 
 
